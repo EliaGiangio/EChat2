@@ -1,0 +1,80 @@
+.chat-drop-up {
+    position: sticky;
+    bottom: 0;
+    width: 15%;
+    z-index: 9999;
+}
+
+.chat-drop-up-elements {
+    width: 100%;
+}
+
+.chat-area {
+    background-color: blue;
+    position: fixed;
+    height: 500px;
+    width: 500px;
+    bottom: 0;
+    right: 53%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-creation-area {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.message-creation-area textarea {
+    width: 94%;
+}
+
+.chat-area-username {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.conversation-area {
+    max-height: 600px;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: yellow;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bubble {
+    margin: 5px;
+    border-radius: 20%;
+    position: relative;
+    max-width: 75%;
+    padding: 7px 15px;
+    margin-bottom: 2px;
+    word-wrap: break-word;
+
+}
+
+.bubble p {
+    overflow: hidden;
+}
+
+.msg-sender {
+    margin-right: auto;
+    background: #f1f1f1;
+    color: #000 !important;
+    border-radius: 20px 20px 20px 3px;
+    padding: 7px 13px 7px 13px;
+}
+
+.msg-receiver {
+
+    margin-left: auto;
+    background: #42a5f5;
+    color: #fff !important;
+    border-radius: 20px 20px 3px 20px;
+    padding: 7px 13px 7px 13px;
+}
