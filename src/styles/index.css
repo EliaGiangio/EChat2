@@ -1,11 +1,37 @@
 @import url('../styles/chat.css');
+@import url('../styles/landing.css');
+@import url('../styles/home.css');
+@import url('../styles/profile.css');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+h1,
+a {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
 
 .container-lg {
-  background-color: red;
-  height: 10%;
   width: 70%;
   margin-top: 5px;
 }
+
 
 .post-card {
   margin: 10px;
@@ -15,4 +41,13 @@
 .all-posts {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.navbar {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  cursor: pointer;
 }

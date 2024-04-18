@@ -1,0 +1,26 @@
+.profile-div {
+    text-align: center;
+}
+
+.change-username-element form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.change-username-element input {
+    margin-bottom: 10px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(56, 211, 13, 0.2);
+}
+
+.change-username-element button {
+    width: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.username-div {
+    display: flex;
+    justify-content: center;
+}

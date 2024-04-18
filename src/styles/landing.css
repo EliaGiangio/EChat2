@@ -1,0 +1,42 @@
+.container-landing {
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.container-landing h1 {
+    font-size: 100px;
+}
+
+.input-fields {
+    margin: 10px;
+}
+
+.landing-button {
+    margin: 5px;
+}
+
+.landing-card {
+    text-align: center;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.credentials-form form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.credentials-form button {
+    width: 300px;
+}

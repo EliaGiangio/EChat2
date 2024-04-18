@@ -57,7 +57,7 @@ export default function ChatDropUp() {
     return (
         <>
             <div className="btn-group dropup chat-drop-up">
-                <button type="button" className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button type="button" className="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Friends
                 </button>
                 <ul className="dropdown-menu chat-drop-up-elements">
@@ -65,7 +65,7 @@ export default function ChatDropUp() {
                         otherUser.email !== user.email
                         &&
                         <li key={index}>
-                            <button onClick={() => openChat(otherUser)}>{otherUser.username}</button>
+                            <button className="btn btn-outline-success list-friend-single" onClick={() => openChat(otherUser)}>{otherUser.username}</button>
                         </li>
                     ))}
                 </ul>

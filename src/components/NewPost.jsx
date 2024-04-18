@@ -14,11 +14,11 @@ export default function NewPost({ onSubmitPost }) {
     };
 
     return (
-        <div>
+        <div className='new-post-element'>
             <h1>What's on your mind?</h1>
             <form onSubmit={handleSubmit}>
-                <textarea value={post} onChange={handlePostChange} />
-                <button type="submit">SHARE</button>
+                <textarea className='form-control' value={post} onChange={handlePostChange} />
+                <button className='btn btn-success' type="submit">SHARE</button>
             </form>
         </div>
 

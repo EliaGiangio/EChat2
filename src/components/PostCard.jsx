@@ -6,15 +6,16 @@ function PostCard({ text, author, time, link }) {
 
     return (
         <div className="card text-center post-card">
-            <div className="card-header">
+            <div className="post-header card-header">
                 <a onClick={() => navigate('/user/' + `${link}`)}> {author}</a>
             </div>
             <div className="card-body">
-                <h5 className="card-title"> {text}</h5>
-                <p className="card-text">Post content</p>
+                <p className="card-text">{text}</p>
             </div>
-            <div className="card-footer text-body-secondary">
-                {time}
+            <div class="card-footer text-body-secondary">
+                Likes | Comments
+                <br />
+                (coming soon)
             </div>
         </div>
     );

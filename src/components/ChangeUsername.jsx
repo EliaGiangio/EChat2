@@ -14,9 +14,11 @@ export default function ChangeUsername({ onSubmitUsername }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <textarea value={username} onChange={handleUsernameChange} />
-            <button type="submit">Change</button>
-        </form>
+        <div className='change-username-element'>
+            <form onSubmit={handleSubmit}>
+                <input className='input-fields form-control' value={username} onChange={handleUsernameChange} />
+                <button className='btn btn-success' type="submit">Change</button>
+            </form>
+        </div>
     );
 }

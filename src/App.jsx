@@ -5,13 +5,10 @@ import {
   Route,
 } from "react-router-dom";
 import Navbar from '../src/components/Navbar'
-import SignUp from "./pages/SignUp";
-import Login from "./pages/LogIn";
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import ErrorPage from './pages/ErrorPage';
-import ChatDropUp from './components/ChatDropUp';
-import ChatArea from './components/ChatArea';
+import LandingPage from "./pages/LandingPage";
 import { useAuth } from './AuthContext';
 
 
@@ -25,11 +22,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/signup" element={<SignUp />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/" element={user ? <Home /> : <Navigate to="/login" />} />
+          <Route exact path="/landingpage" element={<LandingPage />} />
+          <Route exact path="/" element={user ? <Home /> : <Navigate to="/landingpage" />} />
           <Route path="/user/:id" element={<Profile />} />
-          <Route path="*" element={user ? <ErrorPage /> : <Navigate to="/login" />} />
+          <Route path="*" element={user ? <ErrorPage /> : <Navigate to="/landingpage" />} />
         </Routes>
       </Router>
     </>

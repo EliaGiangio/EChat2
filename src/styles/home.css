@@ -1,0 +1,41 @@
+.new-post-element form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.new-post-element h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.new-post-element textarea {
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(56, 211, 13, 0.2);
+}
+
+.new-post-element button {
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    background-color: #87ceeb;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.card-header a {
+    font-size: larger;
+}
