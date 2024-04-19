@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 dotenv.config();
 
 export default defineConfig({
-  base: '/EChat2.0/',
+  base: '/EChat2/',
   plugins: [react()],
   define: {
     'process.env': process.env
